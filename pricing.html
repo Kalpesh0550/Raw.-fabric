@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw Fabric - Luxury Apparel - Premium Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #059669, #2563eb, #0891b2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="scroll-smooth bg-black text-gray-200">
+    <nav class="fixed top-0 w-full bg-gray-900/80 backdrop-blur-lg shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold gradient-text">Raw Fabric - Luxury Apparel</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="collection.html" class="hover:text-emerald-400">Collection</a>
+                <a href="#features" class="hover:text-emerald-400">Why Us</a>
+                <a href="#pricing.html" class="hover:text-emerald-400">Pricing</a>
+                <a href="#contact" class="hover:text-emerald-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+<section id="Pricing Plans" class="py-16 px-4 bg-black">
+
+  <style>
+    body {
+      margin: 20;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background-color:white;
+    }
+
+    #pricing {
+      padding: 40px;
+      background-color: black;
+      text-align: center;
+    }
+
+    #pricing h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .pricing-box {
+      background:#002e63;
+      border-radius: 10px;
+      padding: 30px;
+      width: 250px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .pricing-box h3 {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .pricing-box p {
+      font-size: 20px;
+      color: white ;
+      margin-bottom: 20px;
+    }
+
+    .pricing-box ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .pricing-box ul li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .pricing-box ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: green;
+    }
+
+    .pricing-box button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .pricing-box button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</section>
+
+<body>
+
+<section id="pricing">
+  <h2>Pricing Plans</h2>
+  <div class="pricing-container">
+    <div class="pricing-box">
+      <h3>Basic</h3>
+      <p>₹499 / month</p>
+      <ul>
+        <li>1 Product</li>
+        <li>Basic Support</li>
+        <li>Free Updates</li>
+      </ul>
+      <button onclick="selectPlan('Basic', 499)">Select Plan</button>
+    </div>
+    <div class="pricing-box">
+      <h3>Standard</h3>
+      <p>₹999 / month</p>
+      <ul>
+        <li>5 Products</li>
+        <li>Priority Support</li>
+        <li>Free Updates</li>
+      </ul>
+      <button onclick="selectPlan('Standard', 999)">Select Plan</button>
+    </div>
+    <div class="pricing-box">
+      <h3>Premium</h3>
+      <p>₹1499 / month</p>
+      <ul>
+        <li>Unlimited Products</li>
+        <li>24/7 Support</li>
+        <li>All Features</li>
+      </ul>
+      <button onclick="selectPlan('Premium', 1499)">Select Plan</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  function selectPlan(planName, price) {
+    alert(`You selected the ${planName} Plan for ₹${price}`);
+    // You can replace the alert with addToCart() or payment code
+  }
+</script>
+
+</body>
+
+
+
+    <section id="features" class="py-16 px-4 bg-black">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 text-white">Our Luxury Promise</h2>
+            <p class="text-gray-400 mb-8">Crafted with premium fabrics, modern designs, affordable pricing, and seamless nationwide delivery.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-gray-800 rounded-lg shadow hover-lift">
+                    <h3 class="font-semibold text-white">Premium Fabrics</h3>
+                    <p class="text-gray-400">Soft, durable, and responsibly sourced materials.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow hover-lift">
+                    <h3 class="font-semibold text-white">Inclusive Sizes</h3>
+                    <p class="text-gray-400">Fits for all body types and preferences.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow hover-lift">
+                    <h3 class="font-semibold text-white">Customer Support</h3>
+                    <p class="text-gray-400">Assistance available 24/7 via WhatsApp and phone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-16 px-4 bg-gray-900">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 text-white">Pricing</h2>
+            <p class="text-gray-400">Exceptional value meets luxury. Enjoy exclusive offers on our meticulously crafted collections.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 px-4 bg-black">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 text-white">Contact Us</h2>
+            <p class="text-gray-400 mb-4">Phone: 8591610375</p>
+            <p class="text-gray-400 mb-4">Email: contact@rawfabric.com</p>
+            <div class="flex justify-center gap-4">
+                <a href="https://wa.me/918591610375" class="px-6 py-3 bg-emerald-600 text-white rounded hover-lift">WhatsApp</a>
+                <a href="mailto:contact@rawfabric.com" class="px-6 py-3 border-2 border-emerald-600 text-emerald-400 rounded hover-lift">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p>© 2025 Raw Fabric - Luxury Apparel. Premium Style. Authentic Quality.</p>
+    </footer>
+</body>
+</html>
